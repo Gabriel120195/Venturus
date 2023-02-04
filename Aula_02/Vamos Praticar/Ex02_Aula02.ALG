@@ -8,9 +8,9 @@ base, altura, area :real
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-escreval("Diamentro da BASE do Triangulo: ")
+escreval("Diâmentro da BASE do Triângulo: ")
   leia(base)
-escreval("Diamentro da ALTURA do Triangulo: ")
+escreval("Diâmentro da ALTURA do Triângulo: ")
   leia(altura)
   
  area <- (base*altura) / 2

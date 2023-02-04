@@ -8,9 +8,9 @@ n1, n2, sub, divi, multi, soma: real
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
-   escreval("primeiro numero: ")
+   escreval("primeiro número: ")
    leia(n1)
-   escreval("Segundo numero: ")
+   escreval("Segundo número: ")
    leia(n2)
    
    soma <- (n1 + n2)
