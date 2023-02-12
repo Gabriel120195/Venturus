@@ -21,6 +21,8 @@ Inicio
    
    divi <- (n1 / n2)
    
+     escreval("PRIMEIRO NÚMERO: ",N1)
+     escreval("SEGUNDO NÚMERO: ",N2)
      escreval("SOMA: ", soma)
      escreval("SUBTRAÇÃO ",sub)
      escreval("MULTIPLICAÇÃO: ", multi )
