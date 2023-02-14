@@ -14,13 +14,12 @@ i <- 1
 sexoTotalHomem <- 0
 sexoTotalMulher <- 0
 repita
-     // escreva("Nome: ")
-       //leia(nome)
-      //escreva("Altura: ")
-       //leia(alt)
-      //escreva("Peso: ")
-      // leia(peso)
-
+      escreva("Nome: ")
+       leia(nome)
+      escreva("Altura: ")
+       leia(alt)
+      escreva("Peso: ")
+       leia(peso)
       escreva("Sexo: ")
        leia(sexo)
        

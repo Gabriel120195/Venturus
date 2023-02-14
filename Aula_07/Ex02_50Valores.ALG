@@ -5,13 +5,18 @@ Algoritmo "Ex02_50Valores"
 Var
 // Seção de Declarações das variáveis 
 i,vMaior,vMenor,vTotal: inteiro
-valores : vetor [0..9] de inteiro
+valores : vetor [1..50] de inteiro
 media:real
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-para i de 0 ate 9 faca
+vMaior <- 1
+vMenor <- 1
+
+para i de 1 ate 50 faca
      escreva("Digite o valor: ")
+      aleatorio 1,50
       leia(valores[i])
+      aleatorio off
       
       se (valores[i] < valores[vMenor]) entao
          vMenor <- i
@@ -23,7 +28,7 @@ para i de 0 ate 9 faca
 
       vTotal <- vTotal + valores[i]
 
-      media <- (vTotal / 10)
+      media <- (vTotal / 50)
 fimpara
        escreval("Menor valor = ",valores[vMenor])
        escreval("Maior valor = ",valores[vMaior])
