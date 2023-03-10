@@ -2,21 +2,37 @@ Algoritmo "Ex03_Medias"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Autor(a)    : Gabriel
 // Data atujl  : 11/02/2023
-Var
-// Seção de Declarações das variáveis 
-i,j:inteiro
-vNomes: vetor[1..2] de caractere
-nome:caractere
-Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
-para i de 1 ate 2 faca
-     escreva("nome: ")
-      leia(vNomes[i])
-fimpara
-      
-para j de 1 ate 2 faca
-       escreval(vNomes[j])
-fimpara
-
-
-Fimalgoritmo
+var
+nome: vetor[1..5] de Caractere
+nota1: vetor[1..5] de Real
+nota2: vetor[1..5] de Real
+media: vetor[1..5] de Real
+SMed, MTurma: Real
+i: Inteiro
+inicio
+Para i <- 1 ate 5 faca
+Escreva("Nome: ")
+ Leia(nome[i])
+Escreva("Nota 1: ")
+ Leia(nota1[i])
+Escreva("Nota 2: ")
+ Leia(nota2[i])
+Escreva("Media: ")
+ media[i] <- (nota1[i] + nota2[i])/2
+ EscrevaL(media[i]:4:1)
+      SMed <- SMed + media[i]
+FimPara
+   
+   LimpaTela
+   
+   MTurma <- Smed / 5
+   EscrevaL ("A media da turma e ", MTurma:4:1)
+   EscrevaL("-----------------------------------")
+   EscrevaL("Alunos que ficaram acima da media")
+   EscrevaL("-----------------------------------")
+   Para i <- 1 ate 5 faca
+      Se (media[i] > MTurma) entao
+         EscrevaL(nome[i]:20, media[i]:4:1)
+      FimSe
+   FimPara
+fimalgoritmo
