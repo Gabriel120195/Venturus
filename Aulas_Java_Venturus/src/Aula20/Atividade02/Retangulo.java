@@ -4,6 +4,7 @@ public class Retangulo extends Forma {
     private double base;
     private double altura;
 
+    public Retangulo(){}
     public Retangulo(double base, double altura) {
         this.base = base;
         this.altura = altura;
@@ -12,7 +13,7 @@ public class Retangulo extends Forma {
     @Override
     public void area() {
        double area = this.base * this.altura;
-        System.out.println(area);
+        System.out.println("Retangulo:\n Area = " + area + " Cor = " + getCor());
     }
 
     public double getBase() {
